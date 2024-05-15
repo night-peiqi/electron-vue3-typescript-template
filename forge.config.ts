@@ -9,7 +9,9 @@ import { FuseV1Options, FuseVersion } from '@electron/fuses'
 
 const config: ForgeConfig = {
   packagerConfig: {
-    asar: true
+    asar: true,
+    icon: process.platform === 'darwin' ? 'assets/logo.icns' : 'assets/logo.ico',
+    name: 'Font Mini'
   },
   rebuildConfig: {},
   makers: [new MakerSquirrel({}), new MakerZIP({}, ['darwin']), new MakerRpm({}), new MakerDeb({})],

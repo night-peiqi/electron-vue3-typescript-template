@@ -12,7 +12,6 @@
     "release-major": "standard-version --release-as major",
     "release-minor": "standard-version --release-as minor",
     "release-patch": "standard-version --release-as patch",
-    "lint": "eslint --fix",
     "lint:fix": "eslint --ext .js,.ts,.vue . --fix",
     "commit": "git add . && git-cz"
   },
@@ -46,8 +45,8 @@
   },
   "keywords": [],
   "author": {
-    "name": "zhuhaojie",
-    "email": "zhuhaojie@cqslim.com"
+    "name": "night-peiqi",
+    "url": "https://github.com/night-peiqi"
   },
   "license": "MIT",
   "dependencies": {
@@ -55,7 +54,7 @@
     "vue": "^3.4.27"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": "yarn run lint"
+    "*.{js,ts,vue}": "npm run lint:fix"
   },
   "commitlint": {
     "extends": [
